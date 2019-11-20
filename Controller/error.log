@@ -1,0 +1,202 @@
+2019-01-19 11:32:20 Warning: Warning (4096): Object of class stdClass could not be converted to string in [C:\xampp\htdocs\UX\app\Controller\UsersController.php, line 195]
+Trace:
+UsersController::view() - APP\Controller\UsersController.php, line 195
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 165
+[main] - APP\webroot\index.php, line 111
+
+2019-01-21 05:50:54 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category' in 'field list'
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblsubc...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblsubc...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblsubc...')
+#4 [internal function]: DboSource->query('UPDATE `tblsubc...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(245): Model->query('UPDATE `tblsubc...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-01-21 05:50:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category' in 'field list'
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblsubc...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblsubc...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblsubc...')
+#4 [internal function]: DboSource->query('UPDATE `tblsubc...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(245): Model->query('UPDATE `tblsubc...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-01-21 06:25:55 Error: Fatal Error (4): syntax error, unexpected '$data_arr' (T_VARIABLE), expecting function (T_FUNCTION) in [C:\xampp\htdocs\UX\app\Controller\UsersController.php, line 283]
+2019-01-21 06:25:55 Error: [InternalErrorException] Internal Server Error
+Request URL: /UX/Users/view/
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 283)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 283, Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 283, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-01-21 08:21:39 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `Categoryid`=12' at line 1
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblcate...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblcate...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblcate...')
+#4 [internal function]: DboSource->query('UPDATE `tblcate...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(218): Model->query('UPDATE `tblcate...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-01-21 08:21:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `Categoryid`=12' at line 1
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblcate...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblcate...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblcate...')
+#4 [internal function]: DboSource->query('UPDATE `tblcate...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(218): Model->query('UPDATE `tblcate...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-01-21 08:36:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+										`Active`='Y' WHERE `Subcategoryid`=4' at line 1
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblsubc...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblsubc...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblsubc...')
+#4 [internal function]: DboSource->query('UPDATE `tblsubc...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(258): Model->query('UPDATE `tblsubc...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-01-21 08:36:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+										`Active`='Y' WHERE `Subcategoryid`=4' at line 1
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblsubc...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblsubc...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblsubc...')
+#4 [internal function]: DboSource->query('UPDATE `tblsubc...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(258): Model->query('UPDATE `tblsubc...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-01-22 05:31:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+										`Active`='N' WHERE `Subcategoryid`=4' at line 1
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblsubc...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblsubc...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblsubc...')
+#4 [internal function]: DboSource->query('UPDATE `tblsubc...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(258): Model->query('UPDATE `tblsubc...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-01-22 05:34:59 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+							`G_Volume`='9685',`US_Volume`='236'  WHERE `Keyid`=1037' at line 1
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblkeyw...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblkeyw...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblkeyw...')
+#4 [internal function]: DboSource->query('UPDATE `tblkeyw...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(181): Model->query('UPDATE `tblkeyw...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-01-22 05:35:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+							`G_Volume`='9685',`US_Volume`='236'  WHERE `Keyid`=1037' at line 1
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblkeyw...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblkeyw...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblkeyw...')
+#4 [internal function]: DboSource->query('UPDATE `tblkeyw...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(181): Model->query('UPDATE `tblkeyw...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-01-22 05:35:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+							`G_Volume`='9685',`US_Volume`='236'  WHERE `Keyid`=1037' at line 1
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblkeyw...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblkeyw...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblkeyw...')
+#4 [internal function]: DboSource->query('UPDATE `tblkeyw...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(181): Model->query('UPDATE `tblkeyw...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-01-22 05:35:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+							`G_Volume`='9685',`US_Volume`='236'  WHERE `Keyid`=1037' at line 1
+Request URL: /UX/Users/view/view
+Stack Trace:
+#0 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `tblkeyw...', Array)
+#2 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('UPDATE `tblkeyw...', Array, Array)
+#3 C:\xampp\htdocs\UX\lib\Cake\Model\Datasource\DboSource.php(537): DboSource->fetchAll('UPDATE `tblkeyw...')
+#4 [internal function]: DboSource->query('UPDATE `tblkeyw...')
+#5 C:\xampp\htdocs\UX\lib\Cake\Model\Model.php(3309): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\UX\app\Controller\UsersController.php(181): Model->query('UPDATE `tblkeyw...')
+#7 [internal function]: UsersController->view('view')
+#8 C:\xampp\htdocs\UX\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\UX\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\UX\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
